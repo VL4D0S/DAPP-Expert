@@ -1,0 +1,114 @@
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(../font/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url(../font/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../font/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url(../font/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "MuseoSansCyrl";
+    src: url(../font/MuseoSansCyrl_500.otf);
+}
+@font-face {
+    font-family: "FuturaPT-Book";
+    src: url(../font/FuturaPT-Book.ttf);
+}
+@font-face {
+    font-family: "FuturaPT-Heavy";
+    src: url(../font/FuturaPT-Heavy.ttf);
+}
+body {
+    width: 100%;
+    font-family: "OpenSans", sans-serif;
+    background-image: url(../img/main-bg.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 86%;
+    margin: 0 auto;
+}
+
+.small-container {
+    max-width: 76%;
+    margin: 0 auto;
+}
+.header {
+    position: relative;
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    padding-top: 31px;
+    background-image: url(../img/header-main-bg.png);
+    background-size: 100% 90px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+/* .header::after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #818181;
+    border-right: 100px solid transparent;  
+    z-index: 2;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    left: -100px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #818181;
+    border-left: 100px solid transparent;  
+    z-index: 2;
+} */
+
+.header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 90px;
+    background-image: url(../img/header-bg.png);
+    background-size: 400px 90px;
+    background-repeat: no-repeat;
+    z-index: 999;
+}
+
+.header__logo > img {
+    width: 250px;
+    height: auto;
+}
+
+.block__cards-content > img {
+    width: 100%;
+    height: auto;
+}
