@@ -72,7 +72,7 @@ body {
     background-image: url(../img/header-bg.png);
     background-size: 400px 90px;
     background-repeat: no-repeat;
-    z-index: 999;
+    z-index: 3;
 }
 .header__logo {
     padding-top: 10px;;
