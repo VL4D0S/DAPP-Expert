@@ -391,7 +391,7 @@ body {
 }
 
 .main-table-block {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .main__table-sort {
     display: flex;
@@ -540,6 +540,7 @@ body {
     max-width: 100%;
     height: 80px;
     margin: 0 auto;
+    margin-bottom: 5px;
     background-color: #f6f6f6;
     border-top: 1px solid #d0d0d0;
     border-bottom: 1px solid #d0d0d0;
@@ -574,7 +575,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 99px;
+    width: 98.5px;
     height: 1px;
     background-color: #d0d0d0;
     transform-origin: left;
@@ -584,7 +585,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 99px;
+    width: 98.5px;
     height: 1px;
     background-color: #d0d0d0;
     transform-origin: right;
@@ -592,7 +593,6 @@ body {
 }
 .table__item-content {
     display: flex;
-    justify-content: space-between;
     max-width: 88%;
     margin: 0 auto;
 }
@@ -605,8 +605,13 @@ body {
     border: 4px solid #f8f8f8;
     background-color: #ffffff;
 }
+.table__item-info {
+    display: flex;
+    width: 100%;
+}
 .table__item-title {
     margin-top: 26px;
+    margin-right: 60px;
     color: #000000;
     font-family: "OpenSans-SemiBold";
     font-size: 18px;
@@ -617,7 +622,8 @@ body {
 }
 
 .table__item-blockchain-title {
-    margin-top: 18px;
+    margin-top: 16px;
+    margin-right: 75px;
     color: #000000;
     font-family: "OpenSans-SemiBold";
     font-size: 18px;
@@ -629,7 +635,8 @@ body {
 }
 
 .table__item-category-title {
-    margin-top: 18px;
+    margin-top: 16px;
+    margin-right: 55px;
     color: #000000;
     font-family: "OpenSans-SemiBold";
     font-size: 18px;
@@ -639,8 +646,11 @@ body {
     line-height: 23.34px;
     text-transform: uppercase;
 }
+.table__item-balance {
+    margin-right: 100px;
+}
 .table__item-balance-title {
-    margin-top: 18px;
+    margin-top: 16px;
     color: #000000;
     font-family: "OpenSans-SemiBold";
     font-size: 18px;
@@ -660,8 +670,11 @@ body {
     letter-spacing: normal;
     line-height: 23.34px;
 }
+.table__item-users {
+    margin-right: 105px;
+}
 .table__item-users-title {
-    margin-top: 18px;
+    margin-top: 16px;
     color: #000000;
     font-family: "OpenSans-SemiBold";
     font-size: 18px;
@@ -680,4 +693,344 @@ body {
     font-style: normal;
     letter-spacing: normal;
     line-height: 23.34px;
+}
+.table__item-turnover {
+    margin-right: 55px;
+}
+.table__item-turnover-title {
+    margin-top: 16px;
+    color: #000000;
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23.34px;
+    text-transform: uppercase;
+}
+.table__item-turnover-procent {
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+}
+
+.item__turnover-procent-filled {
+    color: #000000;
+    font-family: "OpenSans-SemiBold";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23.34px;
+}
+.item__turnover-procent-empty {
+    margin-left: 5px;
+    color: #0090ff;
+    font-family: "OpenSans-SemiBold";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23.34px;
+}
+.table__item-turnover-strip {
+    display: flex;
+}
+.item__turnover-strip-filled {
+    position: relative;
+    width: 60%;
+    height: 7px;
+    background-color: #88c8ff;
+}
+.item__turnover-strip-filled::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #88c8ff;
+    border-left: 5px solid transparent;
+    z-index: 2;
+}
+.item__turnover-strip-filled::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #88c8ff;
+    border-right: 5px solid transparent;
+    z-index: 2;
+}
+.item__turnover-strip-empty {
+    position: relative;
+    width: 40%;
+    height: 7px;
+    background-color: #b8b8b8;
+}
+.item__turnover-strip-empty::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #b8b8b8;
+    border-right: 5px solid transparent;
+    z-index: 2;
+}
+.table__item-txs-title {
+    margin-top: 16px;
+    margin-right: 60px;
+    color: #000000;
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23.34px;
+    text-transform: uppercase;
+}
+.table__item-index-title {
+    margin-top: 16px;
+    /* margin-right: 20px; */
+    color: #000000;
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23.34px;
+    text-transform: uppercase;
+}
+
+.block__table-item.active .table__item-blockchain-title, .block__table-item.active .table__item-category-title, .block__table-item.active .table__item-balance-title,
+.block__table-item.active .table__item-balance-procent, .block__table-item.active .table__item-users-title, .block__table-item.active .table__item-users-procent,
+.block__table-item.active .table__item-turnover-title, .block__table-item.active .item__turnover-procent-filled, .block__table-item.active .item__turnover-procent-empty,
+.block__table-item.active .table__item-txs-title, .block__table-item.active .table__item-index-title {
+    color: #ffffff;
+}
+.block__table-item.active .item__turnover-strip-empty {
+    background-color: #fff;
+}
+.block__table-item.active .item__turnover-strip-empty::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #fff;
+    border-right: 5px solid transparent;
+    z-index: 2;
+}
+.show-more {
+    text-align: right;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+.show-more > a {
+    color: #0c87f2;
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30.01px;
+    text-decoration: underline;
+    transition: color .4s ease-in-out;
+}
+.show-more > a:hover {
+    color: #000;
+}
+
+.dapp-statistics-block {
+    margin-bottom: 200px;
+}
+.statistics__block-content {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics__block-title {
+    margin-bottom: 30px;
+    color: #677c99;
+    font-family: "OpenSans";
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+}
+.statistics__block-indicators {
+    color: #0c87f2;
+    font-family: "FuturaPT-Heavy";
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20.48px;
+}
+.statistics__block-indicators.border {
+    margin-top: -15px;
+    margin-left: -20px;
+    padding: 10px;
+    border: 3px solid #0090ff;
+    border-radius: 40px;
+}
+.blockchain-data-block {
+    margin-bottom: 150px;
+}
+.blockchain__data-categories {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockchain__data-title {
+    color: #000000;
+    font-family: "OpenSans";
+    font-size: 26px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+}
+.data-categories-item {
+    width: 120px;
+    height: 50px;
+    padding-top: 15.5px;
+    text-align: center;
+    color: #677c99;
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 13px;
+    border: 3px solid #0c87f2;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: color .4s ease-in-out;
+}
+.data-categories-item.active {
+    color: #fff;
+    background-color: #0c87f2;
+}
+.data-categories-item:hover {
+    color: #000;
+}
+.blockchain__data-schedule > img {
+    display: block;
+    max-width: 88%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(../img/footer-main-bg.png);
+    background-size: 100% 250px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.footer::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 81.5%;
+    height: 250px;
+    background-image: url(../img/footer-bg.png);
+    background-size: 100% 250px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.footer__content {
+    max-width: 35%;
+    margin: 0 auto;
+}
+
+.footer__content-networks {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.footer__content-title {
+    margin-top: 50px;
+    color: #000000;
+    font-family: "FuturaPT-Book";
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+}
+.footer__content-network {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 330px;
+}
+.footer__content-network-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px 2px #505050;
+}
+.footer__content-network-item > a {
+    text-decoration: none;
+}
+.footer__content-network-item > a > img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.footer__link-first-block {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.link__block-item > a {
+    color: #000000;
+    font-family: "FuturaPT-Book";
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-decoration: none;
+}
+.link__block-item:hover {
+    cursor: pointer;
+}
+.footer__link-second-block {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.footer__copyright > p {
+    color: #000000;
+    font-family: "FuturaPT-Book";
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
 }
