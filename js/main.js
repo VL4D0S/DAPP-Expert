@@ -1,6 +1,8 @@
-$('.main__slider').slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  });
+document.addEventListener("DOMContentLoaded", () => {
+    $('.main__slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});

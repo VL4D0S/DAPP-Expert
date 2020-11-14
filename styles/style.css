@@ -37,8 +37,8 @@ body {
     font-family: "OpenSans", sans-serif;
     background-image: url(../img/main-bg.jpg);
     background-position: center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-size: 100%;
+    background-repeat: repeat-y;
 }
 .container {
     max-width: 86%;
@@ -1138,11 +1138,14 @@ body {
     background-repeat: no-repeat;
 }
 .slider-block {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+    z-index: 5;
 }
 .slider__block-content {
     max-width: 82%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 .main__slider-item > img {
     max-width: 680px;
@@ -1150,7 +1153,8 @@ body {
     margin-bottom: 10px;
 }
 .main__slider {
-    max-width: 680px;;
+    max-width: 680px;
+    height: 350px;
 }
 .slick-dots > li {
     width: 15px;
@@ -1189,4 +1193,148 @@ button.slick-arrow {
 .slick-next.slick-arrow::before {
     content: ">";
     font-size: 25px;
+}
+.similar-block {
+    margin-top: -30px;
+}
+.similar__block-title {
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: "OpenSans-Bold";
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+}
+.similar__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid #949494;
+    display: flex;
+}
+.similar__item-img {
+    max-width: 78px;
+    margin-right: 20px;
+}
+.similar__item-img > img {
+    display: block;
+    padding: 0;
+    max-width: 70px;
+    height: auto;
+    border: 2.4px solid #3d82c4;
+    outline: none;
+    border-radius: 8px;
+}
+.similar__item-name {
+    max-width: 150px;
+    margin-top: 10px;
+    color: #677c99;
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+}
+.analytics-block {
+    margin-bottom: 50px;
+}
+.analytics__content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.analytics__title {
+    color: #000000;
+    font-family: "OpenSans-Bold";
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+.analytics__imgs {
+    display: flex;
+}
+.analytics__img {
+    margin-right: 70px;
+}
+.analytics__img > img {
+    width: 270px;
+    height: auto;
+    border: 2px solid #0c87f2;
+    border-radius: 30px;
+}
+.dapp__info-content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.dapp__info-title {
+    margin-bottom: 20px;
+    color: #0c87f2;
+    font-family: "OpenSans-SemiBold";
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+}
+.dapp__info-contents {
+    margin-bottom: 80px;
+}
+.dapp__info-text, .dapp__info-contents-title {
+    max-width: 63%;
+    margin-bottom: 40px;
+    color: #677c99;
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 25px;
+}
+.dapp__info-button {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding-top: 17px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: #0c87f2;
+    border-radius: 10px;
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    line-height: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.dapp__info-button > a {
+    text-decoration: none;
+    color: #fefefe;
+    transition: color .4s ease-in-out;
+}
+.dapp__info-button:hover > a {
+    color: #000;
+}
+.dapp__info-imgs {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+.dapp__item-img {
+    max-width: 78px;
+    margin-right: 60px;
+}
+.dapp__item-img > img {
+    display: block;
+    padding: 0;
+    max-width: 70px;
+    height: auto;
+    border: 2.4px solid #3d82c4;
+    outline: none;
+    border-radius: 8px;
 }
