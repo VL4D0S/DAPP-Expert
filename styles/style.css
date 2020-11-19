@@ -39,6 +39,8 @@ body {
     background-position: center;
     background-size: 100%;
     background-repeat: repeat-y;
+	max-width: 1920px;
+	margin: 0 auto;
 }
 .container {
     max-width: 86%;
@@ -75,11 +77,18 @@ body {
     z-index: 3;
 }
 .header__logo {
-    padding-top: 10px;;
+    padding-top: 10px;
+    cursor: pointer;
+    z-index: 5;
 }
-.header__logo > img {
+.header__logo > a {
+    text-decoration: none;
+}
+.header__logo > a > img {
     width: 250px;
     height: auto;
+    z-index: 5;
+
 }
 .header__input {
     position: relative;
@@ -156,7 +165,10 @@ body {
     cursor: pointer;
     transition: background-color .3s ease-in-out;
 }
-
+.header__button > a {
+    text-decoration: none;
+    color: #fefefe;
+}
 .header__button:hover {
     background-color: #177cd4;
 }
@@ -196,11 +208,15 @@ body {
 .block__cards-content {
     max-width: 88%;
     margin: 0 auto;
+    display: flex;
 }
 .block__cards-content:hover {
     cursor: pointer;
 }
-.block__cards-content > img {
+.block__cards-content > a {
+    text-decoration: none;
+}
+.block__cards-content > a > img {
     width: 100%;
     height: auto;
 }
@@ -262,13 +278,13 @@ body {
     justify-content: space-between;
 }
 .blockchain__categories-item {
+    display: block;
     position: relative;
     width: 70px;
     height: 40px;
     margin-left: 20px;
     margin-right: 30px;
     text-align: center;
-    padding-top: 8px;
     background-color: #a5a5a5;
     color: #ffffff;
     font-family: "OpenSans-Bold";
@@ -279,6 +295,14 @@ body {
     line-height: 21.87px;
     text-transform: uppercase;
     transition: color .4s ease-in-out;
+    outline: none;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+    z-index: 5;
+}
+.blockchain__categories-item:last-child {
+    padding-right: 70px;
 }
 .blockchain__categories-item:hover {
     color: #000000;
@@ -902,11 +926,12 @@ body {
     line-height: 30px;
 }
 .data-categories-item {
+    display: block;
     width: 120px;
     height: 50px;
-    padding-top: 15.5px;
     text-align: center;
     color: #677c99;
+    background-color: transparent;
     font-family: "OpenSans";
     font-size: 16px;
     font-weight: 700;
@@ -917,6 +942,7 @@ body {
     border-radius: 40px;
     cursor: pointer;
     transition: color .4s ease-in-out;
+    outline: none;
 }
 .data-categories-item.active {
     color: #fff;
@@ -1073,9 +1099,9 @@ body {
     line-height: 25px;
 }
 .dapp__game-button {
+    display: block;
     margin-top: 34px;
     margin-left: 18px;
-    padding-top: 17px;
     text-align: center;
     width: 200px;
     height: 50px;
@@ -1089,6 +1115,10 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     cursor: pointer;
+    outline: none;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
 }
 .dapp__game-button > a {
     text-decoration: none;
@@ -1237,6 +1267,14 @@ button.slick-arrow {
     letter-spacing: normal;
     line-height: 20px;
 }
+.similar__item-name > a {
+    text-decoration: none;
+    color: #677c99;
+    transition: color .4s ease-in-out;
+}
+.similar__item-name:hover > a {
+    color: #000;
+}
 .analytics-block {
     margin-bottom: 50px;
 }
@@ -1295,9 +1333,9 @@ button.slick-arrow {
     line-height: 25px;
 }
 .dapp__info-button {
+    display: block;
     margin-top: 30px;
     margin-bottom: 80px;
-    padding-top: 17px;
     text-align: center;
     width: 200px;
     height: 50px;
@@ -1311,6 +1349,9 @@ button.slick-arrow {
     line-height: 15px;
     text-transform: uppercase;
     cursor: pointer;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
 }
 .dapp__info-button > a {
     text-decoration: none;
@@ -1329,7 +1370,10 @@ button.slick-arrow {
     max-width: 78px;
     margin-right: 60px;
 }
-.dapp__item-img > img {
+.dapp__item-img > a {
+    text-decoration: none;
+}
+.dapp__item-img > a > img {
     display: block;
     padding: 0;
     max-width: 70px;
@@ -1337,4 +1381,348 @@ button.slick-arrow {
     border: 2.4px solid #3d82c4;
     outline: none;
     border-radius: 8px;
+}
+/* cookie.html, privacy.html, terms.html */
+.cookie__content, .privacy__content, .terms__content {
+    max-width: 85%;
+    margin: 0 auto;
+}
+.cookie__title, .privacy__title, .terms__title {
+    margin-bottom: 50px;
+    color: #000000;
+    font-family: "OpenSans";
+    font-size: 35px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.menu-block {
+    margin-bottom: 50px;
+}
+.menu-block > ul {
+    display: flex;
+}
+ul > .menu__block-item {
+    position: relative;
+    list-style-type: none;
+    margin-left: 60px;
+    width: 200px;
+    height: 55px;
+    background-color: #a5a5a5;
+    text-align: center;
+    padding-top: 15px;
+    color: #ffffff;
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23.18px;
+    cursor: pointer;
+}
+ul > .menu__block-item > a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .4s ease-in-out;
+}
+ul > .menu__block-item:hover > a{
+    color: #000000;
+}
+
+ul > .menu__block-item::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 55px solid #a5a5a5;
+    border-left: 40px solid transparent;  
+    z-index: 3;
+}
+ul > .menu__block-item::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 55px solid #a5a5a5;
+    border-right: 40px solid transparent;  
+    z-index: 3;
+}
+ul > .menu__block-item.active {
+    background-color: #0c87f2;
+}
+ul > .menu__block-item.active::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 55px solid #0c87f2;
+    border-left: 40px solid transparent;  
+    z-index: 3;
+}
+ul > .menu__block-item.active::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 55px solid #0c87f2;
+    border-right: 40px solid transparent;  
+    z-index: 3;
+}
+.section__text {
+    margin-bottom: 70px;
+    color: #000000;
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+}
+.section__text > p {
+    margin-bottom: 10px;
+}
+.section__text > ol {
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.section__text > ol > li {
+    margin-bottom: 10px;
+}
+.identification__information-title {
+    margin-bottom: 30px;
+    color: #000000;
+    font-family: "OpenSans";
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+}
+.sub-section.last {
+    margin-bottom: 200px;
+
+}
+.section__title {
+    margin-bottom: 30px;
+    color: #000000;
+    font-family: "OpenSans";
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+/* submit-dapp.html */
+.submit__content {
+    max-width: 85%;
+    margin: 0 auto;
+}
+.submit__dupp-section, .soc__media-section, .contacts-section, .screen-section {
+    margin-bottom: 150px;
+}
+.submit__dupp-title, .soc__media-title, .contacts__title, .screen__title {
+    margin-bottom: 40px;
+    color: #000000;
+    font-family: "OpenSans";
+    font-size: 45px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 40px;
+}
+.dupp__sub-title, .screen__sub-title {
+    max-width: 800px;
+    margin-bottom: 60px;
+    color: #000000;
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+}
+.dapp__text {
+    margin-bottom: 30px;
+    color: #000000;
+    font-family: "OpenSans-Bold";
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+}
+.dapp__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.dapp_input {
+    width: 500px;
+    height: 80px;
+    font-family: "OpenSans";
+    border-radius: 40px;
+    outline: none;
+    border: 3px solid #0c87f2;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+.dapp_input::placeholder {
+    color: #000000;
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 400;
+}
+.dapp__select {
+    position: relative;
+    margin-bottom: 20px;
+}
+.dapp__select::after {
+    content: ">";
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 25px;
+    color: #000000;
+    transform: rotate(90deg);
+}
+.dapp__select > select {
+    width: 500px;
+    height: 80px;
+    font-family: "OpenSans";
+    border-radius: 40px;
+    outline: none;
+    border: 3px solid #0c87f2;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
+    appearance: none;
+}
+.dapp__textarea {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.dapp__textarea > span {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    font-family: "OpenSans";
+    color: rgb(139, 136, 136);
+    font-size: 14px;
+    font-weight: 400;
+}
+.textarea__input {
+    width: 500px;
+    height: 300px;
+    font-family: "OpenSans";
+    border-radius: 40px;
+    outline: none;
+    border: 3px solid #0c87f2;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 30px;
+    margin-bottom: 20px;
+    resize: none;
+
+}
+.dapp__file {
+    display: flex;
+    margin-right: 30%;
+}
+.dapp__file-input {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border: 3px solid #0c87f2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dapp__file-input::after{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    z-index: -1;
+}
+.dapp__file-input > input {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+.dapp__flie-info {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.dapp__file-title {
+    font-family: "OpenSans";
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.dapp__file-subtitle {
+    font-family: "OpenSans";
+    color: rgb(139, 136, 136);
+    font-size: 14px;
+    font-weight: 400;
+}
+.button__block {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+.button__block-text {
+    text-align: center;
+    font-family: "OpenSans";
+    color: #eb3535;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.button__block-button {
+    display: block;
+    width: 500px;
+    height: 80px;
+    background-color: #0c87f2;
+    font-family: "OpenSans";
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    line-height: 24px;
+}
+.button__block-descr {
+    font-family: "OpenSans";
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 20px;
 }

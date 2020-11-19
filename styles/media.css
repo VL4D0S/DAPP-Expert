@@ -1,0 +1,657 @@
+.header-btns {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.data-categories-itemss {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+}
+.table__sort-list {
+    max-width: 845px;
+}
+.table__item-info {
+    max-width: 1050px;
+}
+.data-categories-item {
+    margin: 0 20px;
+}
+
+.header__lang {
+    margin-left: 40px;
+}
+span.border {
+    border: 3px solid #0c87f2;
+    border-radius: 40px;
+    padding: 0 20px;
+    margin-left: -20px;
+}
+.table__block-mobile {
+    display: none;
+}
+.d-none {
+    display: none;
+}
+.d-lg-block {
+    display: block;
+}
+.main__slider {
+    height: auto;
+    width: 100%;
+}
+.slider__block-content {
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-around;
+}
+.similar-block {
+    margin-left: 55px;
+}
+@media screen and (min-width: 1200px) {
+    .d-lg-block {
+        display: block;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .blockchain__content-categories {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .block__blockchain-content {
+        display: block;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .block__blockchain-content::before,
+    .block__blockchain-content::after {
+        display: none;
+    }
+
+    .block__blockchain-content {
+        background-color: transparent;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .dapp__game-info {
+        width: 100%;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+        justify-content: center;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .main__slider-item > img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        object-fit: contain;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+        padding-top: 0;
+        background-image: none;
+        background-color: #828282;
+    }
+
+    .header__input {
+        display: none;
+    }
+
+    .block__cards-content {
+        flex-wrap: wrap;
+    }
+
+    .header-btns {
+        flex-direction: row-reverse;
+    }
+
+    .blockchain__content-title {
+        color: #000;
+        font-size: 33px;
+        margin: 0;
+        margin-bottom: 55px;
+        margin-top: 70px;
+    }
+
+    .blockchain__categories-item {
+        margin-bottom: 20px;
+    }
+
+    .blockchain__data-categories {
+        flex-direction: column;
+    }
+
+    .blockchain__data-categories {
+        max-width: 100%;
+    }
+
+    .blockchain__data-title {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+
+    .data-categories-itemss {
+        justify-content: space-around;
+        margin-bottom: 25px;
+    }
+    .statistics__block-content {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .statistics__block-item {
+        width: 50%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .statistics__block-title {
+        font-size: 26px;
+        color: #000;
+        margin-bottom: 15px;
+    }
+    .table__sort-list {
+        display: none;
+    }
+    .main__table-sort {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 0px;
+        margin-bottom: 50px;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+    }
+    .block-categories {
+        margin-bottom: 30px;
+    }
+    .block__categories-heading {
+        padding-top: 0;
+    }
+    .block__categories-heading-item::after {
+        display: none;
+    }
+    .block__categories-content {
+        border-bottom: none;
+    }
+    .block__categories-heading-item {
+        display: none;
+    }
+    .block__categories-title {
+        line-height: 1;
+    }
+    .block__categories-heading-item.active {
+        display: block;
+        width: 100%;
+    }
+    .block__categories-heading-item.active span {
+        background: url(../img/heading-item-img.png) no-repeat center;
+        background-size: contain;
+        padding: 5px 10px;
+        width: 100%;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .table__block-table {
+        display: none;
+    }
+    .table__block-mobile {
+        display: block;
+    }
+    .last-col {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .left-col {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+    }
+    .table__item-content {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .percent-loss {
+        color: red;
+        font-size: 20px;
+    }
+    .place-item {
+        font-size: 27px;
+        color: #000;
+    }
+    .top-item-table-con {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+    .table__item-content {
+        position: relative;
+        max-width: 600px;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .token {
+        position: relative;
+    }
+    .token:after {
+        content: "токен";
+        background: url(../img/token.png);
+		background-size: auto;
+		background-repeat: no-repeat;
+        text-transform: uppercase;
+        position: absolute;
+        top: -7px;
+        font-size: 7px;
+        color: #fff;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+        justify-content: center;
+        -ms-align-items: center;
+        align-items: center;
+        background-size: contain;
+        padding: 6px;
+        width: 40px;
+        left: 60px;
+        right: 0;
+        margin: 0 auto;
+        margin-left: 260px;
+    }
+    .table__item-content.active {
+        background: rgb(33, 152, 247);
+        background: linear-gradient(
+            180deg,
+            rgba(33, 152, 247, 1) 0%,
+            rgba(255, 255, 255, 1) 99%
+        );
+        margin-bottom: 40px;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 14% 100%);
+    }
+    .table__item-content {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 1) 83%
+        );
+        margin-bottom: 40px;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 14% 100%);
+    }
+    .btm-item-table-con {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+        justify-content: space-between;
+        max-width: 300px;
+        font-size: 13px;
+        justify-content: space-between;
+        align-content: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 5px;
+    }
+    .table__item-icon {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+    }
+    .ime {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .ime img {
+        max-width: 330px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .eth {
+        color: #3971fa;
+    }
+    .weth {
+        color: #2f4fbc;
+    }
+    .other {
+        color: #6c97fd;
+    }
+    .dapp_input, .dapp__select > select, .textarea__input {
+        width: 400px;
+    }
+    .dapp__textarea > span {
+        right: 120px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .footer::after {
+        display: none;
+    }
+
+    .footer__content {
+        max-width: 90%;
+    }
+
+    .footer__content-networks {
+        width: 100%;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+        justify-content: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer__content-network {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .footer__links {
+        margin: 50px 0;
+    }
+
+    .footer {
+        background-image: none;
+        background-color: #b6b6b6;
+        height: 100%;
+    }
+
+    .footer__link-first-block {
+        margin-bottom: 0;
+    }
+
+    .footer__link-first-block,
+    .footer__link-second-block {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .link__block-item > a,
+    .footer__copyright > p {
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .header__logo {
+        width: 150px;
+        padding-top: 0;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    .header__logo > a > img {
+        width: 100%;
+    }
+
+    .header__lang {
+        justify-content: space-around;
+        width: 60px;
+        padding-top: 0;
+    }
+
+    .header__lang-logo > img {
+        width: 25px;
+    }
+
+    .header__lang-title {
+        font-size: 16px;
+        padding-top: 0;
+    }
+
+    .header__button {
+        max-width: 240px;
+        width: 100%;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        line-height: 100%;
+        flex-direction: column;
+        font-size: 13px;
+    }
+    .show-more {
+        margin-right: 0;
+    }
+    .dapp-statistics-block {
+        margin-bottom: 50px;
+    }
+    /**/
+
+    .dapp__main-content {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .game__descr-text {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .daap-info-user {
+        display: none;
+    }
+    .daap-info-user__mob {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        -ms-align-items: flex-end;
+        align-items: flex-end;
+    }
+    .game__descr-contracts {
+        margin-top: 100px;
+    }
+    .slider__block-content {
+        max-width: 100%;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .main__slider {
+        margin: 0 auto;
+    }
+    .similar-block {
+        max-width: 460px;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 80px;
+    }
+    .analytics__imgs {
+        justify-content: center;
+    }
+    .analytics__title {
+        text-align: center;
+    }
+    .dapp__info-content {
+        max-width: 100%;
+    }
+    .dapp__info-text,
+    .dapp__info-contents-title {
+        margin-bottom: 25px;
+    }
+    .similar__item {
+        border-top: 1px solid #000;
+    }
+    .analytics__img {
+        display: none;
+    }
+    .analytics__img:nth-child(1) {
+        display: block;
+        margin-right: 0;
+    }
+    .dapp__info-imgs {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 200px;
+        justify-content: space-around;
+        align-content: center;
+    }
+    .dapp__item-img {
+        margin-right: 0;
+    }
+    .dapp__info-text,
+    .dapp__info-contents-title {
+        max-width: 100%;
+    }
+    .dapp__info-title,
+    .similar__block-title {
+        line-height: 1.5;
+        font-size: 24px;
+    }
+    .game__descr-contracts {
+        margin-left: 0;
+    }
+    .slider__block-content button.slick-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    .slick-next.slick-arrow {
+        right: -15px;
+    }
+    .slick-prev {
+        left: -15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .blockchain__content-categories {
+        justify-content: center;
+    }
+    .data-categories-itemss {
+        flex-wrap: wrap;
+    }
+    .data-categories-item {
+        margin-bottom: 20px;
+    }
+    .header::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__lang {
+        margin: 0 20px;
+    }
+    .block__categories-content {
+        flex-wrap: wrap;
+    }
+    .block__categories-heading {
+        margin-top: 20px;
+    }
+    .game__descr-contracts {
+        margin-top: 50px;
+    }
+    .menu-block {
+        width: 230px;
+    }
+    .menu-block > ul {
+        flex-wrap: wrap;
+    }
+    .menu-block > ul > li {
+        margin-bottom: 10px;
+    }
+    .section__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .button__block-button {
+        font-size: 16px;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .submit__dupp-section, .soc__media-section, .contacts-section, .screen-section {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .statistics__block-title {
+        font-size: 18px;
+    }
+    .statistics__block-item {
+        text-align: left;
+    }
+    .table__item-content,
+    .table__item-content.active {
+        clip-path: none;
+    }
+    .token {
+        box-shadow: 4px 4px 27px #aa9797;
+    }
+    .token:after {
+        margin-left: 65px;
+        left: 0;
+    }
+    .ime img {
+        max-width: 100%;
+    }
+    .dapp__select > select, .textarea__input{
+        width: 250px;
+    }
+    .dapp__textarea > span {
+        right: 180px;
+    }
+    .button__block-button {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .dapp__textarea > span {
+        right: 50px;
+    }
+    .button__block-button {
+        max-width: 200px;
+    }
+}

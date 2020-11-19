@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <title>Submit Dapp</title>
+</head>
+<body>
+    <header class="header">
+		<div class="container">
+			<div class="header__content">
+				<div class="header__logo">
+					<a href="/"><img src="./img/logo.png" alt="logo"></a>
+				</div>
+				<div class="header__input">
+					<input type="search" placeholder="Поиск">
+				</div>
+				<div class="header-btns">
+					<div class="header__button">
+						<a href="submit-dapp.html">Разместить Dapp</a>
+					</div>
+					<div class="header__lang">
+						<div class="header__lang-logo">
+							<img src="./icons/lang-logo.svg" alt="lang-logo">
+						</div>
+						<div class="header__lang-title">
+							Ru
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="submit__content">
+                <form action="" class="dapp__form">
+                    <section class="submit__dupp-section">
+                        <h1 class="submit__dupp-title">Вы можете разместить свой Dapp здесь</h1>
+                        <p class="dupp__sub-title">
+                            Пожалуйста, введите всю информацию связанную с вашим Dapp в поля для 
+                            заполнения. Если вы хотите, чтобы информация обновилась, свяжетсь с нами info@dapp.expert
+                        </p>
+                        <div class="dapp__text">
+                            Информация о Dapp:
+                        </div>
+                        <div class="dapp__wrapper">
+                            <input type="text" class="dapp_input" name="" placeholder="Название Dapp *" required>
+                            <div class="dapp__select">
+                                <select name="" required>
+                                    <option selected disabled>Category*</option>
+                                    <option value="4">Collectibles</option>
+                                    <option value="484">DeFi</option>
+                                    <option value="3">Exchanges</option>
+                                    <option value="767">Finance</option>
+                                    <option value="5">Gambling</option>
+                                    <option value="2">Games</option>
+                                    <option value="6">High-Risk</option>
+                                    <option value="7">Marketplaces</option>
+                                    <option value="8">Other</option>
+                                    <option value="632">Social</option>
+                                </select>
+                            </div>
+                            <input type="text" class="dapp_input" name="" placeholder="Адрес сайта Dapp *" required>
+                            <div class="dapp__select">
+                                <select name="" required multiple>
+                                    <option selected disabled>Языки*</option>
+                                    <option value="EN">English</option>
+                                    <option value="JP">Japanese</option>
+                                    <option value="CN">Chinese</option>
+                                    <option value="RU">Russian</option>
+                                </select>
+                            </div>
+                            <input type="text" class="dapp_input" name="" placeholder="Dapp's Short Description *" required>
+                            <div class="dapp__select">
+                                <select name="" required multiple>
+                                    <option selected disabled>Платформа*</option>
+                                    <option>iOS</option>
+                                    <option>Android</option>
+                                    <option>Web</option>
+                                </select>
+                            </div>
+                            <div class="dapp__select">
+                                <select name="" required>
+                                    <option selected disabled>Блокчейн*</option>
+                                    <option value="EOS">EOS</option>
+                                    <option value="ETH">ETH</option>
+                                    <option value="IOST">IOST</option>
+                                    <option value="Klaytn">Klaytn</option>
+                                    <option value="LOOM">LOOM</option>
+                                    <option value="NEO">NEO</option>
+                                    <option value="TRON">TRON</option>
+                                    <option value="VeChain">VeChain</option>
+                                </select>
+                            </div>
+                            <input type="text" class="dapp_input" name="" placeholder='Адреса главного контракта (использовать "," для разделения)'>
+                            <input type="url" class="dapp_input" name="" placeholder="White Paper Link" required>
+                        </div>
+                        <div class="dapp__text">
+                            Полное описание Dapp
+                        </div>
+                        <div class="dapp__wrapper">
+                            <div class="dapp__textarea">
+                                <textarea class="textarea__input"></textarea>
+                                <span>800 characters</span>
+                            </div>
+                            <div class="dapp__file">
+                                <div class="dapp__file-input">
+                                    <input type="file">
+                                </div>
+                                <div class="dapp__flie-info">
+                                    <div class="dapp__file-title">
+                                        Логотип Dapp
+                                    </div>
+                                    <div class="dapp__file-subtitle">
+                                        256x256 (256KB)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="soc__media-section">
+                        <h2 class="soc__media-title">
+                            Социальные сети
+                        </h2>
+                        <div class="dapp__wrapper">
+                            <input type="url" class="dapp_input" name="" placeholder="Facebook" required>
+                            <input type="url" class="dapp_input" name="" placeholder="Twitter" required>
+                            <input type="url" class="dapp_input" name="" placeholder="Instagram" required>
+                            <input type="url" class="dapp_input" name="" placeholder="Youtube" required>
+                            <input type="url" class="dapp_input" name="" placeholder="Telegram" required>
+                            <input type="url" class="dapp_input" name="" placeholder="Linkedin" required>
+                        </div>
+                    </section>
+                    <section class="contacts-section">
+                        <h2 class="contacts__title">
+                            Контактные данные
+                        </h2>
+                        <div class="dapp__wrapper">
+                            <input type="text" class="dapp_input" name="" placeholder="Месторасположение команды">
+                            <input type="email" class="dapp_input" name="" placeholder="Контактная почта *" required>
+                            <input type="text" class="dapp_input" name="" placeholder="Имя контактного лица">
+                        </div>
+                    </section>
+                    <section class="screen-section">
+                        <h2 class="screen__title">
+                            Добавить скриншоты
+                        </h2>
+                        <p class="screen__sub-title">
+                            Загрузить фотографии, которые могут описать ваше децентрализованное приложение. Пожалуйста, 
+                            загрузите фотографии с соотношением 2:1, размером до 512 килобайт и с разрешением до 1200х600 
+                            пикселей. Рекомедованное разрешение 600х300, 800х400 пикселей.
+                        </p>
+                        <div class="dapp__text">
+                            Перетянуть и отпустить
+                        </div>
+                        <div class="dapp__wrapper">
+                            <div class="dapp__file">
+                                <div class="dapp__file-input">
+                                    <input type="file" multiple>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="button__block">
+                        <div class="button__block-text">
+                            Обязательные к заполнению поля&nbsp;*
+                        </div>
+                        <button class="button__block-button">
+                            Submit Your Dapp
+                        </button>
+                        <div class="button__block-descr">
+                            Нажимая на "Разместить Dapp" вы соглашаетесь с тем, что прочли условия использования и политику конфиденциальности
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<div class="footer__content-networks">
+					<div class="footer__content-title">
+						Follows us
+					</div>
+					<div class="footer__content-network">
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-1.png" alt="footer-network-1"></a>
+						</div>
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-2.png" alt="footer-network-2"></a>
+						</div>
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-3.png" alt="footer-network-3"></a>
+						</div>
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-4.png" alt="footer-network-4"></a>
+						</div>
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-5.png" alt="footer-network-5"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__links">
+					<div class="footer__link-first-block">
+						<div class="link__block-item">
+							<a href="submit-dapp.html">Разместить Dapp</a>
+						</div>
+						<div class="link__block-item">
+							<a href="terms.html">Условия использования</a>
+						</div>
+						<div class="link__block-item">
+							<a href="cookie.html">Политика связанная с CooKie</a>
+						</div>
+					</div>
+					<div class="footer__link-second-block">
+						<div class="link__block-item">
+							<a href="#">CoinGecko API</a>
+						</div>
+						<div class="link__block-item">
+							<a href="privacy.html">Политика конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<p>Copyright &copy; 2020 Dapp.expert</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

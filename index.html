@@ -5,599 +5,744 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <title>DAPP Expert</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <div class="header__logo">
-                    <img src="./img/logo.png" alt="logo">
-                </div>
-                <div class="header__input">
-                    <input type="text" placeholder="Поиск">
-                </div>
-                <div class="header__button">
-                    Разместить Dapp
-                </div>
-                <div class="header__lang">
-                    <div class="header__lang-logo">
-                        <img src="./icons/lang-logo.svg" alt="lang-logo">
-                    </div>
-                    <div class="header__lang-title">
-                        Ru
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="block-cards">
-            <div class="container">
-                <div class="block__cards-content">
-                    <img src="./img/main-cards.jpg" alt="main-cards">
-                </div>
-            </div>
-        </div>
-        <div class="block-blockchain">
-            <div class="container">
-                <div class="block__blockchain-content">
-                    <div class="blockchain__content-title">
-                        Блокчейн
-                    </div>
-                    <div class="blockchain__content-categories">
-                        <div class="blockchain__categories-item active">
-                            all
-                        </div>
-                        <div class="blockchain__categories-item">
-                            eos
-                        </div>
-                        <div class="blockchain__categories-item">
-                            eth
-                        </div>
-                        <div class="blockchain__categories-item">
-                            iost
-                        </div>
-                        <div class="blockchain__categories-item">
-                            loom
-                        </div>
-                        <div class="blockchain__categories-item">
-                            neo
-                        </div>
-                        <div class="blockchain__categories-item">
-                            tron
-                        </div>
-                        <div class="blockchain__categories-item">
-                            vechain
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="block-categories">
-            <div class="container">
-                <div class="block__categories-content">
-                    <div class="block__categories-title">
-                        Категории:
-                    </div>
-                    <div class="block__categories-heading">
-                        <div class="block__categories-heading-item">
-                            All
-                        </div>
-                        <div class="block__categories-heading-item">
-                            Collectibels
-                        </div>
-                        <div class="block__categories-heading-item">
-                            Exchanges
-                        </div>
-                        <div class="block__categories-heading-item">
-                            Gambling
-                        </div>
-                        <div class="block__categories-heading-item">
-                            Games
-                        </div>
-                        <div class="block__categories-heading-item">
-                            High-Risk
-                        </div>
-                        <div class="block__categories-heading-item">
-                            Marketplases
-                        </div>
-                        <div class="block__categories-heading-item">
-                            Other
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-table-block">
-            <div class="container">
-                <div class="main__table-sort">
-                    <div class="table__sort-time">
-                        <div class="table__sort-time-item active">
-                            24 часа
-                        </div>
-                        <div class="table__sort-time-item">
-                            7 дней
-                        </div>
-                    </div>
-                    <div class="table__sort-list">
-                        <div class="sort__list-item">
-                            <div class="sort__list-item-text">
-                                Блокчейн
-                            </div>
-                        </div>
-                        <div class="sort__list-item">
-                            <div class="sort__list-item-text">
-                                Категория
-                            </div>
-                        </div>
-                        <div class="sort__list-item">
-                            <div class="sort__list-item-prompt">?</div>
-                            <div class="sort__list-item-text">
-                                Баланс
-                            </div>
-                            <div class="sort__list-item-arrow">
-                                <img src="./icons/main-table-arrow.svg" alt="main-table-arrow">
-                            </div>
-                        </div>
-                        <div class="sort__list-item">
-                            <div class="sort__list-item-prompt">?</div>
-                            <div class="sort__list-item-text">
-                                Пользователи
-                            </div>
-                            <div class="sort__list-item-arrow">
-                                <img src="./icons/main-table-arrow.svg" alt="main-table-arrow">
-                            </div>
-                        </div>
-                        <div class="sort__list-item">
-                            <div class="sort__list-item-prompt">?</div>
-                            <div class="sort__list-item-text">
-                                Оборот
-                            </div>
-                            <div class="sort__list-item-arrow">
-                                <img src="./icons/main-table-arrow.svg" alt="main-table-arrow">
-                            </div>
-                        </div>
-                        <div class="sort__list-item">
-                            <div class="sort__list-item-prompt">?</div>
-                            <div class="sort__list-item-text">
-                                TXS
-                            </div>
-                            <div class="sort__list-item-arrow">
-                                <img src="./icons/main-table-arrow.svg" alt="main-table-arrow">
-                            </div>
-                        </div>
-                        <div class="sort__list-item">
-                            <div class="sort__list-item-text">
-                                <div class="sort__list-item">
-                            <div class="sort__list-item-text lottext">
-                                Dapp.
-                                Expert 
-                                индекс
-                            </div>
-                        </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="table__block-table">
-                    <div class="block__table-item active">
-                        <div class="border-left"></div>
-                        <div class="border-right"></div>
-                        <div class="table__item-content">
-                            <div class="table__item-icon"></div>
-                            <div class="table__item-info">
-                                <div class="table__item-title">
-                                    Candy Pop Duel
-                                </div>
-                                <div class="table__item-blockchain-title">
-                                    EOS
-                                </div>
-                                <div class="table__item-category-title">
-                                    Games
-                                </div>
-                                <div class="table__item-balance">
-                                    <div class="table__item-balance-title">
-                                        $ 446.40 M
-                                    </div>
-                                    <div class="table__item-balance-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-users">
-                                    <div class="table__item-users-title">
-                                        2 K
-                                    </div>
-                                    <div class="table__item-users-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-turnover">
-                                    <div class="table__item-turnover-title">
-                                        $ 186.47 K
-                                    </div>
-                                    <div class="table__item-turnover-procent">
-                                        <div class="item__turnover-procent-filled">
-                                            15.41%
-                                        </div>
-                                        <div class="item__turnover-procent-empty">
-                                            -7.37%
-                                        </div>
-                                    </div>
-                                    <div class="table__item-turnover-strip">
-                                        <div class="item__turnover-strip-filled"></div>
-                                        <div class="item__turnover-strip-empty"></div>
-                                    </div>
-                                </div>
-                                <div class="table__item-txs-title">
-                                    3 K
-                                </div>
-                                <div class="table__item-index-title">
-                                    99.11
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block__table-item">
-                        <div class="border-left"></div>
-                        <div class="border-right"></div>
-                        <div class="table__item-content">
-                            <div class="table__item-icon"></div>
-                            <div class="table__item-info">
-                                <div class="table__item-title">
-                                    Candy Pop Duel
-                                </div>
-                                <div class="table__item-blockchain-title">
-                                    EOS
-                                </div>
-                                <div class="table__item-category-title">
-                                    Games
-                                </div>
-                                <div class="table__item-balance">
-                                    <div class="table__item-balance-title">
-                                        $ 446.40 M
-                                    </div>
-                                    <div class="table__item-balance-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-users">
-                                    <div class="table__item-users-title">
-                                        2 K
-                                    </div>
-                                    <div class="table__item-users-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-turnover">
-                                    <div class="table__item-turnover-title">
-                                        $ 186.47 K
-                                    </div>
-                                    <div class="table__item-turnover-procent">
-                                        <div class="item__turnover-procent-filled">
-                                            15.41%
-                                        </div>
-                                        <div class="item__turnover-procent-empty">
-                                            -7.37%
-                                        </div>
-                                    </div>
-                                    <div class="table__item-turnover-strip">
-                                        <div class="item__turnover-strip-filled"></div>
-                                        <div class="item__turnover-strip-empty"></div>
-                                    </div>
-                                </div>
-                                <div class="table__item-txs-title">
-                                    3 K
-                                </div>
-                                <div class="table__item-index-title">
-                                    99.11
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block__table-item">
-                        <div class="border-left"></div>
-                        <div class="border-right"></div>
-                        <div class="table__item-content">
-                            <div class="table__item-icon"></div>
-                            <div class="table__item-info">
-                                <div class="table__item-title">
-                                    Candy Pop Duel
-                                </div>
-                                <div class="table__item-blockchain-title">
-                                    EOS
-                                </div>
-                                <div class="table__item-category-title">
-                                    Games
-                                </div>
-                                <div class="table__item-balance">
-                                    <div class="table__item-balance-title">
-                                        $ 446.40 M
-                                    </div>
-                                    <div class="table__item-balance-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-users">
-                                    <div class="table__item-users-title">
-                                        2 K
-                                    </div>
-                                    <div class="table__item-users-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-turnover">
-                                    <div class="table__item-turnover-title">
-                                        $ 186.47 K
-                                    </div>
-                                    <div class="table__item-turnover-procent">
-                                        <div class="item__turnover-procent-filled">
-                                            15.41%
-                                        </div>
-                                        <div class="item__turnover-procent-empty">
-                                            -7.37%
-                                        </div>
-                                    </div>
-                                    <div class="table__item-turnover-strip">
-                                        <div class="item__turnover-strip-filled"></div>
-                                        <div class="item__turnover-strip-empty"></div>
-                                    </div>
-                                </div>
-                                <div class="table__item-txs-title">
-                                    3 K
-                                </div>
-                                <div class="table__item-index-title">
-                                    99.11
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block__table-item">
-                        <div class="border-left"></div>
-                        <div class="border-right"></div>
-                        <div class="table__item-content">
-                            <div class="table__item-icon"></div>
-                            <div class="table__item-info">
-                                <div class="table__item-title">
-                                    Candy Pop Duel
-                                </div>
-                                <div class="table__item-blockchain-title">
-                                    EOS
-                                </div>
-                                <div class="table__item-category-title">
-                                    Games
-                                </div>
-                                <div class="table__item-balance">
-                                    <div class="table__item-balance-title">
-                                        $ 446.40 M
-                                    </div>
-                                    <div class="table__item-balance-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-users">
-                                    <div class="table__item-users-title">
-                                        2 K
-                                    </div>
-                                    <div class="table__item-users-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-turnover">
-                                    <div class="table__item-turnover-title">
-                                        $ 186.47 K
-                                    </div>
-                                    <div class="table__item-turnover-procent">
-                                        <div class="item__turnover-procent-filled">
-                                            15.41%
-                                        </div>
-                                        <div class="item__turnover-procent-empty">
-                                            -7.37%
-                                        </div>
-                                    </div>
-                                    <div class="table__item-turnover-strip">
-                                        <div class="item__turnover-strip-filled"></div>
-                                        <div class="item__turnover-strip-empty"></div>
-                                    </div>
-                                </div>
-                                <div class="table__item-txs-title">
-                                    3 K
-                                </div>
-                                <div class="table__item-index-title">
-                                    99.11
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block__table-item">
-                        <div class="border-left"></div>
-                        <div class="border-right"></div>
-                        <div class="table__item-content">
-                            <div class="table__item-icon"></div>
-                            <div class="table__item-info">
-                                <div class="table__item-title">
-                                    Candy Pop Duel
-                                </div>
-                                <div class="table__item-blockchain-title">
-                                    EOS
-                                </div>
-                                <div class="table__item-category-title">
-                                    Games
-                                </div>
-                                <div class="table__item-balance">
-                                    <div class="table__item-balance-title">
-                                        $ 446.40 M
-                                    </div>
-                                    <div class="table__item-balance-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-users">
-                                    <div class="table__item-users-title">
-                                        2 K
-                                    </div>
-                                    <div class="table__item-users-procent">
-                                        0.01%
-                                    </div>
-                                </div>
-                                <div class="table__item-turnover">
-                                    <div class="table__item-turnover-title">
-                                        $ 186.47 K
-                                    </div>
-                                    <div class="table__item-turnover-procent">
-                                        <div class="item__turnover-procent-filled">
-                                            15.41%
-                                        </div>
-                                        <div class="item__turnover-procent-empty">
-                                            -7.37%
-                                        </div>
-                                    </div>
-                                    <div class="table__item-turnover-strip">
-                                        <div class="item__turnover-strip-filled"></div>
-                                        <div class="item__turnover-strip-empty"></div>
-                                    </div>
-                                </div>
-                                <div class="table__item-txs-title">
-                                    3 K
-                                </div>
-                                <div class="table__item-index-title">
-                                    99.11
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="show-more">
-                        <a href="#">Показать больше</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="dapp-statistics-block">
-            <div class="container">
-                <div class="statistics__block-content">
-                    <div class="statistics__block-item">
-                        <div class="statistics__block-title">
-                            Всего<br>
-                            Dapp'ов
-                        </div>
-                        <div class="statistics__block-indicators">
-                            394
-                        </div>
-                    </div>
-                    <div class="statistics__block-item">
-                        <div class="statistics__block-title">
-                            Смарт<br>
-                            Контракты
-                        </div>
-                        <div class="statistics__block-indicators">
-                            2,187
-                        </div>
-                    </div>
-                    <div class="statistics__block-item">
-                        <div class="statistics__block-title">
-                            Пользователей<br>
-                            за 24 часа
-                        </div>
-                        <div class="statistics__block-indicators">
-                            49,858
-                        </div>
-                    </div>
-                    <div class="statistics__block-item">
-                        <div class="statistics__block-title">
-                            Транзакции<br>
-                            за 24 часа
-                        </div>
-                        <div class="statistics__block-indicators">
-                            185,251
-                        </div>
-                    </div>
-                    <div class="statistics__block-item">
-                        <div class="statistics__block-title">
-                            Объем<br>
-                            за 24 часа
-                        </div>
-                        <div class="statistics__block-indicators border">
-                            6,489,418
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="blockchain-data-block">
-            <div class="container">
-                <div class="blockchain__data-content">
-                    <div class="blockchain__data-categories">
-                        <div class="blockchain__data-title">
-                            Данные блокчейна
-                        </div>
-                        <div class="data-categories-item active">
-                            Оборот
-                        </div>
-                        <div class="data-categories-item">
-                            DAU
-                        </div>
-                        <div class="data-categories-item">
-                            Транзакции 
-                        </div>
-                    </div>
-                    <div class="blockchain__data-schedule">
-                        <img src="./img/blockchain-data.jpg" alt="blockchain-data">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__content-networks">
-                    <div class="footer__content-title">
-                        Follows us
-                    </div>
-                    <div class="footer__content-network">
-                        <div class="footer__content-network-item">
-                            <a href="#"><img src="./icons/footer-network-1.png" alt="footer-network-1"></a>
-                        </div>
-                        <div class="footer__content-network-item">
-                            <a href="#"><img src="./icons/footer-network-2.png" alt="footer-network-2"></a>
-                        </div>
-                        <div class="footer__content-network-item">
-                            <a href="#"><img src="./icons/footer-network-3.png" alt="footer-network-3"></a>
-                        </div>
-                        <div class="footer__content-network-item">
-                            <a href="#"><img src="./icons/footer-network-4.png" alt="footer-network-4"></a>
-                        </div>
-                        <div class="footer__content-network-item">
-                            <a href="#"><img src="./icons/footer-network-5.png" alt="footer-network-5"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__links">
-                    <div class="footer__link-first-block">
-                        <div class="link__block-item">
-                            <a href="#">Разместить Dapp</a>
-                        </div>
-                        <div class="link__block-item">
-                            <a href="#">Условия использования</a>
-                        </div>
-                        <div class="link__block-item">
-                            <a href="#">Политика связанная с CooKie</a>
-                        </div>
-                    </div>
-                    <div class="footer__link-second-block">
-                        <div class="link__block-item">
-                            <a href="#">CoinGecko API</a>
-                        </div>
-                        <div class="link__block-item">
-                            <a href="#">Политика конфиденциальности</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__copyright">
-                    <p>Copyright &copy; 2020 Dapp.expert</p> 
-                </div>
-            </div>
-        </div>
-    </footer>
+	<header class="header">
+		<div class="container">
+			<div class="header__content">
+				<div class="header__logo">
+					<a href="/"><img src="./img/logo.png" alt="logo"></a>
+				</div>
+				<div class="header__input">
+					<input type="search" placeholder="Поиск">
+				</div>
+				<div class="header-btns">
+					<div class="header__button">
+						<a href="submit-dapp.html">Разместить Dapp</a>
+					</div>
+					<div class="header__lang">
+						<div class="header__lang-logo">
+							<img src="./icons/lang-logo.svg" alt="lang-logo">
+						</div>
+						<div class="header__lang-title">
+							Ru
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main class="main">
+		<div class="block-cards">
+			<div class="container">
+				<div class="block__cards-content">
+					<a href="#"><img src="./img/main-card-1.png" alt="main-card-1"></a>
+					<a href="#"><img src="./img/main-card-2.png" alt="main-card-2"></a>
+				</div>
+			</div>
+		</div>
+		<div class="block-blockchain">
+			<div class="container">
+				<div class="block__blockchain-content">
+					<div class="blockchain__content-title">
+						Блокчейн
+					</div>
+					<div class="blockchain__content-categories">
+						<button class="blockchain__categories-item active">
+							all
+						</button>
+						<button class="blockchain__categories-item">
+							eos
+						</button>
+						<button class="blockchain__categories-item">
+							eth
+						</button>
+						<button class="blockchain__categories-item">
+							iost
+						</button>
+						<button class="blockchain__categories-item">
+							loom
+						</button>
+						<button class="blockchain__categories-item">
+							neo
+						</button>
+						<button class="blockchain__categories-item">
+							tron
+						</button>
+						<button class="blockchain__categories-item">
+							vechain
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block-categories">
+			<div class="container">
+				<div class="block__categories-content">
+					<div class="block__categories-title">
+						Категории:
+					</div>
+					<div class="block__categories-heading">
+						<div class="block__categories-heading-item active">
+							<span>All</span>
+						</div>
+						<div class="block__categories-heading-item">
+							Collectibels
+						</div>
+						<div class="block__categories-heading-item">
+							Exchanges
+						</div>
+						<div class="block__categories-heading-item">
+							Gambling
+						</div>
+						<div class="block__categories-heading-item">
+							Games
+						</div>
+						<div class="block__categories-heading-item">
+							High-Risk
+						</div>
+						<div class="block__categories-heading-item">
+							Marketplases
+						</div>
+						<div class="block__categories-heading-item">
+							Other
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-table-block">
+			<div class="container">
+				<div class="main__table-sort">
+					<div class="table__sort-time">
+						<div class="table__sort-time-item active">
+							24 часа
+						</div>
+						<div class="table__sort-time-item">
+							7 дней
+						</div>
+					</div>
+					<div class="table__sort-list">
+						<div class="sort__list-item">
+							<div class="sort__list-item-text">
+								Блокчейн
+							</div>
+						</div>
+						<div class="sort__list-item">
+							<div class="sort__list-item-text">
+								Категория
+							</div>
+						</div>
+						<div class="sort__list-item">
+							<div class="sort__list-item-prompt">?</div>
+							<div class="sort__list-item-text">
+								Баланс
+							</div>
+							<div class="sort__list-item-arrow">
+								<img src="./icons/main-table-arrow.svg" alt="main-table-arrow">
+							</div>
+						</div>
+						<div class="sort__list-item">
+							<div class="sort__list-item-prompt">?</div>
+							<div class="sort__list-item-text">
+								Пользователи
+							</div>
+							<div class="sort__list-item-arrow">
+								<img src="./icons/main-table-arrow.svg" alt="main-table-arrow">
+							</div>
+						</div>
+						<div class="sort__list-item">
+							<div class="sort__list-item-prompt">?</div>
+							<div class="sort__list-item-text">
+								Оборот
+							</div>
+							<div class="sort__list-item-arrow">
+								<img src="./icons/main-table-arrow.svg" alt="main-table-arrow">
+							</div>
+						</div>
+						<div class="sort__list-item">
+							<div class="sort__list-item-prompt">?</div>
+							<div class="sort__list-item-text">
+								TXS
+							</div>
+							<div class="sort__list-item-arrow">
+								<img src="./icons/main-table-arrow.svg" alt="main-table-arrow">
+							</div>
+						</div>
+						<div class="sort__list-item">
+							<div class="sort__list-item-text">
+								<div class="sort__list-item">
+									<div class="sort__list-item-text lottext">
+										Dapp.
+										Expert
+										индекс
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="table__block-table">
+					<div class="block__table-item active">
+						<div class="border-left"></div>
+						<div class="border-right"></div>
+						<div class="table__item-content">
+							<div class="table__item-icon"></div>
+							<div class="table__item-info">
+								<div class="table__item-title">
+									Candy Pop Duel
+								</div>
+								<div class="table__item-blockchain-title">
+									EOS
+								</div>
+								<div class="table__item-category-title">
+									Games
+								</div>
+								<div class="table__item-balance">
+									<div class="table__item-balance-title">
+										$ 446.40 M
+									</div>
+									<div class="table__item-balance-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-users">
+									<div class="table__item-users-title">
+										2 K
+									</div>
+									<div class="table__item-users-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-turnover">
+									<div class="table__item-turnover-title">
+										$ 186.47 K
+									</div>
+									<div class="table__item-turnover-procent">
+										<div class="item__turnover-procent-filled">
+											15.41%
+										</div>
+										<div class="item__turnover-procent-empty">
+											-7.37%
+										</div>
+									</div>
+									<div class="table__item-turnover-strip">
+										<div class="item__turnover-strip-filled"></div>
+										<div class="item__turnover-strip-empty"></div>
+									</div>
+								</div>
+								<div class="table__item-txs-title">
+									3 K
+								</div>
+								<div class="table__item-index-title">
+									99.11
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block__table-item">
+						<div class="border-left"></div>
+						<div class="border-right"></div>
+						<div class="table__item-content">
+							<div class="table__item-icon"></div>
+							<div class="table__item-info">
+								<div class="table__item-title">
+									Candy Pop Duel
+								</div>
+								<div class="table__item-blockchain-title">
+									EOS
+								</div>
+								<div class="table__item-category-title">
+									Games
+								</div>
+								<div class="table__item-balance">
+									<div class="table__item-balance-title">
+										$ 446.40 M
+									</div>
+									<div class="table__item-balance-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-users">
+									<div class="table__item-users-title">
+										2 K
+									</div>
+									<div class="table__item-users-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-turnover">
+									<div class="table__item-turnover-title">
+										$ 186.47 K
+									</div>
+									<div class="table__item-turnover-procent">
+										<div class="item__turnover-procent-filled">
+											15.41%
+										</div>
+										<div class="item__turnover-procent-empty">
+											-7.37%
+										</div>
+									</div>
+									<div class="table__item-turnover-strip">
+										<div class="item__turnover-strip-filled"></div>
+										<div class="item__turnover-strip-empty"></div>
+									</div>
+								</div>
+								<div class="table__item-txs-title">
+									3 K
+								</div>
+								<div class="table__item-index-title">
+									99.11
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block__table-item">
+						<div class="border-left"></div>
+						<div class="border-right"></div>
+						<div class="table__item-content">
+							<div class="table__item-icon"></div>
+							<div class="table__item-info">
+								<div class="table__item-title">
+									Candy Pop Duel
+								</div>
+								<div class="table__item-blockchain-title">
+									EOS
+								</div>
+								<div class="table__item-category-title">
+									Games
+								</div>
+								<div class="table__item-balance">
+									<div class="table__item-balance-title">
+										$ 446.40 M
+									</div>
+									<div class="table__item-balance-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-users">
+									<div class="table__item-users-title">
+										2 K
+									</div>
+									<div class="table__item-users-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-turnover">
+									<div class="table__item-turnover-title">
+										$ 186.47 K
+									</div>
+									<div class="table__item-turnover-procent">
+										<div class="item__turnover-procent-filled">
+											15.41%
+										</div>
+										<div class="item__turnover-procent-empty">
+											-7.37%
+										</div>
+									</div>
+									<div class="table__item-turnover-strip">
+										<div class="item__turnover-strip-filled"></div>
+										<div class="item__turnover-strip-empty"></div>
+									</div>
+								</div>
+								<div class="table__item-txs-title">
+									3 K
+								</div>
+								<div class="table__item-index-title">
+									99.11
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block__table-item">
+						<div class="border-left"></div>
+						<div class="border-right"></div>
+						<div class="table__item-content">
+							<div class="table__item-icon"></div>
+							<div class="table__item-info">
+								<div class="table__item-title">
+									Candy Pop Duel
+								</div>
+								<div class="table__item-blockchain-title">
+									EOS
+								</div>
+								<div class="table__item-category-title">
+									Games
+								</div>
+								<div class="table__item-balance">
+									<div class="table__item-balance-title">
+										$ 446.40 M
+									</div>
+									<div class="table__item-balance-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-users">
+									<div class="table__item-users-title">
+										2 K
+									</div>
+									<div class="table__item-users-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-turnover">
+									<div class="table__item-turnover-title">
+										$ 186.47 K
+									</div>
+									<div class="table__item-turnover-procent">
+										<div class="item__turnover-procent-filled">
+											15.41%
+										</div>
+										<div class="item__turnover-procent-empty">
+											-7.37%
+										</div>
+									</div>
+									<div class="table__item-turnover-strip">
+										<div class="item__turnover-strip-filled"></div>
+										<div class="item__turnover-strip-empty"></div>
+									</div>
+								</div>
+								<div class="table__item-txs-title">
+									3 K
+								</div>
+								<div class="table__item-index-title">
+									99.11
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block__table-item">
+						<div class="border-left"></div>
+						<div class="border-right"></div>
+						<div class="table__item-content">
+							<div class="table__item-icon"></div>
+							<div class="table__item-info">
+								<div class="table__item-title">
+									Candy Pop Duel
+								</div>
+								<div class="table__item-blockchain-title">
+									EOS
+								</div>
+								<div class="table__item-category-title">
+									Games
+								</div>
+								<div class="table__item-balance">
+									<div class="table__item-balance-title">
+										$ 446.40 M
+									</div>
+									<div class="table__item-balance-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-users">
+									<div class="table__item-users-title">
+										2 K
+									</div>
+									<div class="table__item-users-procent">
+										0.01%
+									</div>
+								</div>
+								<div class="table__item-turnover">
+									<div class="table__item-turnover-title">
+										$ 186.47 K
+									</div>
+									<div class="table__item-turnover-procent">
+										<div class="item__turnover-procent-filled">
+											15.41%
+										</div>
+										<div class="item__turnover-procent-empty">
+											-7.37%
+										</div>
+									</div>
+									<div class="table__item-turnover-strip">
+										<div class="item__turnover-strip-filled"></div>
+										<div class="item__turnover-strip-empty"></div>
+									</div>
+								</div>
+								<div class="table__item-txs-title">
+									3 K
+								</div>
+								<div class="table__item-index-title">
+									99.11
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="show-more">
+						<a href="#">Показать больше</a>
+					</div>
+				</div>
+				<div class="table__block-mobile">
+<!--1-->
+					<div class="token">
+					<div class="table__item-content active">
+				
+						<div class="top-item-table-con">
+							<div class="left-col">
+								<div class="table__item-icon">
+
+								</div>
+								<div class="table__item-title">
+									Candy Pop Duel
+								</div>
+							</div>
+
+							<div class="last-col">
+								<div class="place-item">
+									68
+								</div>
+								<div class="percent-loss">
+									-2.58%&nbsp;↓
+								</div>
+							</div>
+						</div>
+						<div class="ime"><img src="img/ime.png" alt=""></div>
+						<div class="btm-item-table-con">
+							<div class="eth">$ 0.00 ETH </div>
+							<div class="weth">$ 5.13M WETH </div>
+							<div class="other">
+								$ 3.08 M Others
+							</div>
+						</div>
+					</div>
+					</div>
+<!--2-->
+			<div class="token">
+					<div class="table__item-content">
+				
+						<div class="top-item-table-con">
+							<div class="left-col">
+								<div class="table__item-icon">
+
+								</div>
+								<div class="table__item-title">
+									Candy Pop Duel
+								</div>
+							</div>
+
+							<div class="last-col">
+								<div class="place-item">
+									68
+								</div>
+								<div class="percent-loss">
+									-2.58%&nbsp;↓
+								</div>
+							</div>
+						</div>
+						<div class="ime"><img src="img/ime.png" alt=""></div>
+						<div class="btm-item-table-con">
+							<div class="eth">$ 0.00 ETH </div>
+							<div class="weth">$ 5.13M WETH </div>
+							<div class="other">
+								$ 3.08 M Others
+							</div>
+						</div>
+					</div>
+					</div>
+					<!--3-->
+			<div class="token">
+					<div class="table__item-content">
+				
+						<div class="top-item-table-con">
+							<div class="left-col">
+								<div class="table__item-icon">
+
+								</div>
+								<div class="table__item-title">
+									Candy Pop Duel
+								</div>
+							</div>
+
+							<div class="last-col">
+								<div class="place-item">
+									68
+								</div>
+								<div class="percent-loss">
+									-2.58%&nbsp;↓
+								</div>
+							</div>
+						</div>
+						<div class="ime"><img src="img/ime.png" alt=""></div>
+						<div class="btm-item-table-con">
+							<div class="eth">$ 0.00 ETH </div>
+							<div class="weth">$ 5.13M WETH </div>
+							<div class="other">
+								$ 3.08 M Others
+							</div>
+						</div>
+					</div>
+					</div>
+					<!--4-->
+			<div class="token">
+					<div class="table__item-content">
+				
+						<div class="top-item-table-con">
+							<div class="left-col">
+								<div class="table__item-icon">
+
+								</div>
+								<div class="table__item-title">
+									Candy Pop Duel
+								</div>
+							</div>
+
+							<div class="last-col">
+								<div class="place-item">
+									68
+								</div>
+								<div class="percent-loss">
+									-2.58%&nbsp;↓
+								</div>
+							</div>
+						</div>
+						<div class="ime"><img src="img/ime.png" alt=""></div>
+						<div class="btm-item-table-con">
+							<div class="eth">$ 0.00 ETH </div>
+							<div class="weth">$ 5.13M WETH </div>
+							<div class="other">
+								$ 3.08 M Others
+							</div>
+						</div>
+					</div>
+					</div>
+					
+					<div class="show-more">
+						<a href="#">Показать больше</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dapp-statistics-block">
+			<div class="container">
+				<div class="statistics__block-content">
+					<div class="statistics__block-item">
+						<div class="statistics__block-title">
+							Всего<br>
+							Dapp'ов
+						</div>
+						<div class="statistics__block-indicators">
+							394
+						</div>
+					</div>
+					<div class="statistics__block-item">
+						<div class="statistics__block-title">
+							Смарт<br>
+							Контракты
+						</div>
+						<div class="statistics__block-indicators">
+							2,187
+						</div>
+					</div>
+					<div class="statistics__block-item">
+						<div class="statistics__block-title">
+							Пользователей<br>
+							за 24 часа
+						</div>
+						<div class="statistics__block-indicators">
+							49,858
+						</div>
+					</div>
+					<div class="statistics__block-item">
+						<div class="statistics__block-title">
+							Транзакции<br>
+							за 24 часа
+						</div>
+						<div class="statistics__block-indicators">
+							185,251
+						</div>
+					</div>
+					<div class="statistics__block-item">
+						<div class="statistics__block-title">
+							Объем<br>
+							за 24 часа
+						</div>
+						<div class="statistics__block-indicators">
+							<span class="border"> 6,489,418</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blockchain-data-block">
+			<div class="container">
+				<div class="blockchain__data-content">
+					<div class="blockchain__data-categories">
+						<div class="blockchain__data-title">
+							Данные блокчейна
+						</div>
+						<div class="data-categories-itemss">
+							<button class="data-categories-item active">
+								Оборот
+							</button>
+							<button class="data-categories-item">
+								DAU
+							</button>
+							<button class="data-categories-item">
+								Транзакции
+							</button>
+						</div>
+					</div>
+					<div class="blockchain__data-schedule">
+						<img src="./img/blockchain-data.jpg" alt="blockchain-data">
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<div class="footer__content-networks">
+					<div class="footer__content-title">
+						Follows us
+					</div>
+					<div class="footer__content-network">
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-1.png" alt="footer-network-1"></a>
+						</div>
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-2.png" alt="footer-network-2"></a>
+						</div>
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-3.png" alt="footer-network-3"></a>
+						</div>
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-4.png" alt="footer-network-4"></a>
+						</div>
+						<div class="footer__content-network-item">
+							<a href="#"><img src="./icons/footer-network-5.png" alt="footer-network-5"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__links">
+					<div class="footer__link-first-block">
+						<div class="link__block-item">
+							<a href="submit-dapp.html">Разместить Dapp</a>
+						</div>
+						<div class="link__block-item">
+							<a href="terms.html">Условия использования</a>
+						</div>
+						<div class="link__block-item">
+							<a href="cookie.html">Политика связанная с CooKie</a>
+						</div>
+					</div>
+					<div class="footer__link-second-block">
+						<div class="link__block-item">
+							<a href="#">CoinGecko API</a>
+						</div>
+						<div class="link__block-item">
+							<a href="privacy.html">Политика конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<p>Copyright &copy; 2020 Dapp.expert</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
